@@ -1,0 +1,525 @@
+* html,
+head,
+body {
+    color: rgb(32, 32, 87);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+body {
+    background-image: url("../img/homeBG.jpg");
+    background-image: no-repeat;
+    background-size: 100% auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+header {
+    width: 100%;
+    border: solid white 1px;
+}
+
+header div {
+    width: 100%;
+    height: 100%;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.nav ul {
+    height: 100%;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.nav {
+    list-style: none;
+    text-align: center;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(32, 32, 87);
+    font-weight: bold;
+    font-size: 22px;
+    padding: 15px;
+}
+
+.nav a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    transition-duration: 0.4s;
+}
+
+main {
+    width: 100%;
+}
+
+main section {
+    text-align: center;
+}
+
+main section aside {
+    float: left;
+}
+
+aside img {
+    width: 150px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+main section h2 {
+    vertical-align: middle;
+    font-size: 32px;
+}
+
+main section p {
+    padding: 20px 250px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.home-div {
+    background: rgba(255, 255, 255, 0.50);
+}
+
+/* your stay */
+
+.your-stay-div {
+    background: rgba(255, 255, 255, 0.60);
+    padding: 30px 0px;
+    margin: 30px 0px;
+}
+
+.your-stay-div p {
+    text-align: justify;
+    margin: 10px 10px;
+}
+
+.your-stay-div>h2 {
+    background: none;
+    font-size: 36px;
+}
+
+.your-stay-div aside {
+    float: left;
+    width: 10%;
+}
+
+.item-m {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+}
+
+.item {
+    width: 40%;
+    margin: 5px;
+    display: inline-block;
+    border: 1px solid rgba(110, 162, 230, 0.6);
+    border-radius: 10px;
+}
+
+.item img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* galelry */
+
+.slides {
+    position: relative;
+    width: 70%;
+    padding-left: 200px;
+    text-align: center;
+    margin-top: 20px;
+    background-size: cover;
+}
+
+.slides-inline {
+    display: inline-block;
+    width: 70%;
+}
+
+.slides img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+    border: solid 2px rgba(110, 162, 230, 0.6);
+    border-radius: 10px;
+}
+
+.my-slide {
+    display: none;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(32, 32, 87);
+    border: solid 2px rgba(110, 162, 230, 0.6);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* weather */
+
+.weather-div {
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.weather-div a {
+    padding-left: 20px;
+}
+
+.weather-div h2 {
+    font-size: 36px;
+    padding-top: 40px;
+}
+
+.weather-inline {
+    display: inline-block;
+}
+
+.weather-block {
+    width: 40%;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-top: 80px;
+}
+
+.weather-block div {
+    padding: 10px;
+    border: rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    background: rgba(110, 162, 230, 0.6);
+    font-size: 22px;
+}
+
+.weather-block-clock {
+    display: inline-block;
+    justify-content: center;
+}
+
+/* book*/
+
+.book-div h2 {
+    margin-top: 50px;
+}
+
+.book-div aside {
+    margin-top: -40px;
+}
+
+.book-form {
+    padding-left: 30px;
+    width: 400px;
+    display: inline-block;
+    font-weight: bold;
+    padding-left: 600px;
+}
+
+.book-form>div {
+    padding-bottom: 13px;
+}
+
+.book-logo {
+    float: left;
+    ;
+}
+
+.required {
+    color: red;
+}
+
+.submit-button {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.button-div {
+    text-align: center;
+}
+
+input,
+textarea {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+}
+
+.input-full-fill {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.input-half-left {
+    width: 95%;
+    margin-right: 5%;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.input-half-right {
+    width: 95%;
+    margin-left: 5%;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.input-select {
+    width: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+}
+
+.form-inline {
+    float: left;
+    width: 50%;
+}
+
+.input-middle-fill {
+    width: 75%;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+}
+
+.clear-fix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    width: 100%;
+    height: 15%;
+    display: inline-block;
+    text-align: left;
+    border-top: solid white 1px;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.50);
+}
+
+footer div {
+    display: inline-block;
+    height: auto;
+}
+
+footer img {
+    width: 35px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer .address {
+    float: right;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+
+/* media settings */
+
+@media only screen and (min-width: 1600px) {
+    aside img {
+        width: 200px;
+    }
+    .nav a {
+        padding: 10px 30px;
+        font-size: 2.0em;
+    }
+    main section p {
+        padding: 50px 200px;
+        text-align: justify;
+        font-size: 1.5em;
+    }
+    .book-form {
+        padding-left: 700px !important;
+        font-size: 1.5em;
+    }
+    .book-div h2 {
+        font-size: 2.0em;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .book-form {
+        padding-left: 400px !important;
+    }
+    .slides {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    aside img {
+        width: 125px;
+    }
+    .nav a {
+        padding: 0;
+        font-size: 1.4em;
+    }
+    main section p {
+        padding: 25px 200px;
+        text-align: justify;
+        font-size: 0.9em;
+    }
+    .book-form {
+        padding-left: 250px !important;
+    }
+    .weather-block div {
+        font-size: 18px;
+        padding: 0px;
+        margin: 0;
+    }
+    .weather-gif {
+        width: 100px;
+    }
+    .item {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    aside img {
+        width: 75px;
+    }
+    .nav a {
+        padding: 0;
+        font-size: 1.2em;
+    }
+    main section p {
+        padding: 20px 20px;
+        text-align: justify;
+        font-size: 0.9em;
+    }
+    .book-form {
+        padding-left: 250px !important;
+    }
+    .slides {
+        padding-left: 150px;
+        margin: 0;
+    }
+    .weather-block div {
+        font-size: 16px;
+    }
+    .weather-gif {
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    aside img {
+        width: 75px;
+    }
+    .nav {
+        background: rgba(110, 162, 230, 0.6);
+    }
+    .nav a {
+        padding: 0;
+        font-size: 0.9em;
+    }
+    footer img {
+        width: 25px;
+    }
+    main section p {
+        padding: 10px 10px;
+        text-align: justify;
+        font-size: 0.8em;
+    }
+    .your-stay-div h2 {
+        font-size: 22px;
+    }
+    .book-form {
+        padding-left: 200px !important;
+    }
+    .weather-block {
+        margin-left: 25px;
+    }
+    .weather-block div {
+        font-size: 14px;
+    }
+    .weather-gif {
+        width: 50px;
+    }
+}
