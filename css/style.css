@@ -466,6 +466,7 @@ footer .address {
     .nav a {
         padding: 0;
         font-size: 1.2em;
+        margin-left: 12px;
     }
     main section p {
         padding: 20px 20px;
@@ -501,7 +502,7 @@ footer .address {
     .nav a {
         padding: 0;
         font-size: 0.9em;
-        margin-left: 5px;
+        margin-left: 8px;
     }
     footer img {
         width: 25px;
