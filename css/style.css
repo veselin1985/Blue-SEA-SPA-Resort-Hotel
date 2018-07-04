@@ -530,4 +530,8 @@ footer .address {
     .prev {
         top: 30%;
     }
+    .slides {
+        padding-left: 90px;
+        margin: 0;
+    }
 }
