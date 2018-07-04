@@ -35,10 +35,6 @@ function validateForm() {
         alert('Both Children and Adults cannot be 0!');
         return false;
     }
-    if ($("#arrivalDate").val().trim() !== $("#departureDate").val().trim()) {
-        alert("Arrival date cannot be after or equal to Departure date!")
-        return false
-    }
 
     return true;
 }
