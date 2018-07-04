@@ -485,6 +485,10 @@ footer .address {
     .weather-gif {
         width: 80px;
     }
+    .next,
+    .prev {
+        top: 30%;
+    }
 }
 
 @media only screen and (max-width: 786px) {
@@ -511,7 +515,6 @@ footer .address {
     }
     .book-form {
         font-size: 14px;
-
         padding-left: 80px !important;
     }
     .weather-block {
@@ -522,5 +525,9 @@ footer .address {
     }
     .weather-gif {
         width: 50px;
+    }
+    .next,
+    .prev {
+        top: 30%;
     }
 }
